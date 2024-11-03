@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<head>
+
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="project.css">
+    <script type="text/javascript" src="project.js"></script>
+
+
+</head>
+
+<body>
+    <section class="mainsection">
+        <header>
+            <h1 >Survey</h1>
+            <img src="survey1.jfif">
+        </header>
+        <div id="main">
+                <h2>Enter your details:</h2>
+                <table style="border:0px solid black;margin-left:auto;margin-right:auto;"><!--This brings the below fields into center of the page.-->
+                    <tr>
+                        <td class="label_col">First Name:</td>
+                        <td class="input_col"><input name="firstname" id="firstname" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Last Name:</td>
+                        <td class="input_col"><input name="lastname" id="lastname" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col"> Age:</td>
+                        <td class="input_col"><input name="age" id="age" type="text" onblur="validateAge();"></td>
+                        <td class="feedback_col"><span id="agePrompt"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col"> Gender:</td><!--for this I had taken the input type as radio-->
+                        <td class="input_col"><input name="gender" id="gender" type="radio" value="Male" >Male</td>
+                        <td class="input_col"><input name="gender" id="gender" type="radio" value="Female">Female</td>
+
+                    </tr>
+                    <tr>
+                        <td class="label_col">District:</td>
+                        <td class="input_col"><input name="district" id="district" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Address:</td>
+                        <td class="input_col"><input name="address" id="address" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Phone Number:</td>
+                        <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxx-xxx-xxxx"></td>
+                        <td class="feedback_col"><span id="phonePrompt">xxx-xxx-xxx</span></td>
+                    </tr>
+                    <tr>
+                        <td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="myalert();"> Submit</span></td>
+                    </tr>
+                </table>
+        </div>
+    </section>
+
+</body>
